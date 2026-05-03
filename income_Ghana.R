@@ -67,8 +67,7 @@ df <- df %>%
 # =============================================================================
 
 # Impute missing categorical values
-df$ETHNICITY[is.na(df$ETHNICITY)]   <- 9   # Other ethnicity
-df$EDLEVEL_AR[is.na(df$EDLEVEL_AR)] <- 9   # Other education level
+
 df$INCNF_GROSS[is.na(df$INCNF_GROSS)] <- 0 # Non-farm income: NA = zero
 
 # Ensure key variables are numeric
